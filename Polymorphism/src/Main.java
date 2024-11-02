@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -20,14 +18,28 @@ public class Main {
 //            Movie movie = Movie.getMovie(type, title);
 //            movie.watchMovie();
 //        }
-        Scanner s=new Scanner(System.in);
-        while (true)
-        {
-
-
-        }
+//        Scanner s=new Scanner(System.in);
+//        while (true)
+//        {
+//
+//
+//        }
 
 //        Book b = Book.getBook("Fiction","Harry Potter", 300);
 //        b.readBook();
+
+        Car car = new Car("Ford Mustang");
+        runRace(car);
+        GasPoweredCar gad=car;
+        Car a=
+        Car car1=new GasPoweredCar("Ford Mustang",30,5);
+        runRace(car1);
+
+    }
+
+    public static void runRace(Car cat)
+    {
+        cat.startEngine();
+        cat.drive();;
     }
 }
